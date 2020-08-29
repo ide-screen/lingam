@@ -199,7 +199,7 @@ call the ``fit`` method.
 
 .. parsed-literal::
 
-    <lingam.bottom_up_parce_lingam.BottomUpParceLiNGAM at 0x2652e878748>
+    <lingam.bottom_up_parce_lingam.BottomUpParceLiNGAM at 0x1523acc7848>
 
 
 
@@ -289,14 +289,14 @@ We can check the result by utility function.
 
 .. parsed-literal::
 
-    x4 <--- x0 (b>0) (58.0%)
-    x4 <--- x2 (b<0) (58.0%)
-    x1 <--- x0 (b>0) (52.0%)
-    x1 <--- x2 (b>0) (51.0%)
-    x5 <--- x0 (b>0) (32.0%)
-    x1 <--- x3 (b>0) (28.0%)
-    x0 <--- x3 (b>0) (18.0%)
-    x5 <--- x2 (b>0) (10.0%)
+    x4 <--- x0 (b>0) (45.0%)
+    x4 <--- x2 (b<0) (45.0%)
+    x1 <--- x0 (b>0) (41.0%)
+    x1 <--- x2 (b>0) (41.0%)
+    x5 <--- x0 (b>0) (26.0%)
+    x1 <--- x3 (b>0) (21.0%)
+    x0 <--- x3 (b>0) (12.0%)
+    x5 <--- x2 (b>0) (7.0%)
 
 
 Directed Acyclic Graphs
@@ -321,11 +321,11 @@ We can check the result by utility function.
 
 .. parsed-literal::
 
-    DAG[0]: 25.0%
-    DAG[1]: 10.0%
+    DAG[0]: 33.0%
+    DAG[1]: 13.0%
     	x4 <--- x0 (b>0)
     	x4 <--- x2 (b<0)
-    DAG[2]: 6.0%
+    DAG[2]: 7.0%
     	x1 <--- x0 (b>0)
     	x1 <--- x2 (b>0)
 
@@ -344,12 +344,12 @@ bootstrapping.
 
 .. parsed-literal::
 
-    [[0.   0.02 0.01 0.18 0.01 0.  ]
-     [0.52 0.   0.51 0.28 0.   0.  ]
-     [0.01 0.01 0.   0.06 0.   0.  ]
+    [[0.   0.01 0.   0.12 0.01 0.  ]
+     [0.41 0.   0.41 0.21 0.   0.  ]
+     [0.   0.   0.   0.02 0.   0.  ]
      [0.   0.   0.   0.   0.   0.  ]
-     [0.58 0.04 0.58 0.02 0.   0.09]
-     [0.32 0.03 0.1  0.02 0.   0.  ]]
+     [0.45 0.03 0.45 0.02 0.   0.07]
+     [0.26 0.01 0.07 0.02 0.   0.  ]]
 
 
 Causal Effects
@@ -426,163 +426,156 @@ we have replaced the variable index with a label below.
       <tbody>
         <tr>
           <th>0</th>
-          <td>x3</td>
+          <td>x2</td>
           <td>x4</td>
-          <td>-0.126227</td>
-          <td>0.58</td>
+          <td>-0.273587</td>
+          <td>0.45</td>
         </tr>
         <tr>
           <th>1</th>
           <td>x0</td>
           <td>x4</td>
           <td>0.060692</td>
-          <td>0.58</td>
+          <td>0.45</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>x2</td>
+          <td>x3</td>
           <td>x4</td>
-          <td>-0.273587</td>
-          <td>0.58</td>
+          <td>-0.126227</td>
+          <td>0.45</td>
         </tr>
         <tr>
           <th>3</th>
           <td>x0</td>
           <td>x1</td>
           <td>0.947100</td>
-          <td>0.52</td>
+          <td>0.41</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>x3</td>
-          <td>x1</td>
-          <td>0.653876</td>
-          <td>0.52</td>
-        </tr>
-        <tr>
-          <th>5</th>
           <td>x2</td>
           <td>x1</td>
           <td>0.708409</td>
-          <td>0.51</td>
+          <td>0.41</td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td>x3</td>
+          <td>x1</td>
+          <td>0.653876</td>
+          <td>0.41</td>
         </tr>
         <tr>
           <th>6</th>
-          <td>x1</td>
-          <td>x4</td>
-          <td>-0.050069</td>
-          <td>0.42</td>
-        </tr>
-        <tr>
-          <th>7</th>
           <td>x5</td>
           <td>x4</td>
           <td>0.029068</td>
-          <td>0.41</td>
+          <td>0.34</td>
+        </tr>
+        <tr>
+          <th>7</th>
+          <td>x1</td>
+          <td>x4</td>
+          <td>-0.145353</td>
+          <td>0.34</td>
         </tr>
         <tr>
           <th>8</th>
           <td>x5</td>
           <td>x1</td>
           <td>0.758576</td>
-          <td>0.38</td>
+          <td>0.32</td>
         </tr>
         <tr>
           <th>9</th>
-          <td>x0</td>
-          <td>x5</td>
-          <td>0.517970</td>
-          <td>0.32</td>
+          <td>x4</td>
+          <td>x1</td>
+          <td>-0.326408</td>
+          <td>0.27</td>
         </tr>
         <tr>
           <th>10</th>
           <td>x3</td>
           <td>x5</td>
           <td>0.265528</td>
-          <td>0.32</td>
+          <td>0.26</td>
         </tr>
         <tr>
           <th>11</th>
-          <td>x2</td>
+          <td>x0</td>
           <td>x5</td>
-          <td>0.225770</td>
-          <td>0.30</td>
+          <td>0.518651</td>
+          <td>0.26</td>
         </tr>
         <tr>
           <th>12</th>
-          <td>x4</td>
-          <td>x1</td>
-          <td>0.044771</td>
-          <td>0.30</td>
+          <td>x2</td>
+          <td>x5</td>
+          <td>0.225770</td>
+          <td>0.25</td>
         </tr>
         <tr>
           <th>13</th>
           <td>x3</td>
           <td>x0</td>
           <td>0.511008</td>
-          <td>0.18</td>
+          <td>0.12</td>
         </tr>
         <tr>
           <th>14</th>
-          <td>x2</td>
-          <td>x0</td>
-          <td>0.415262</td>
-          <td>0.16</td>
+          <td>x1</td>
+          <td>x5</td>
+          <td>0.301389</td>
+          <td>0.11</td>
         </tr>
         <tr>
           <th>15</th>
-          <td>x1</td>
-          <td>x5</td>
-          <td>-0.002557</td>
-          <td>0.10</td>
+          <td>x2</td>
+          <td>x0</td>
+          <td>0.415262</td>
+          <td>0.11</td>
         </tr>
         <tr>
           <th>16</th>
-          <td>x3</td>
-          <td>x2</td>
-          <td>0.790837</td>
-          <td>0.06</td>
+          <td>x4</td>
+          <td>x5</td>
+          <td>0.010993</td>
+          <td>0.09</td>
         </tr>
         <tr>
           <th>17</th>
-          <td>x4</td>
-          <td>x5</td>
-          <td>-0.004063</td>
-          <td>0.06</td>
+          <td>x3</td>
+          <td>x2</td>
+          <td>0.790837</td>
+          <td>0.02</td>
         </tr>
         <tr>
           <th>18</th>
           <td>x0</td>
           <td>x2</td>
           <td>0.421582</td>
-          <td>0.04</td>
+          <td>0.02</td>
         </tr>
         <tr>
           <th>19</th>
           <td>x5</td>
           <td>x2</td>
-          <td>0.393533</td>
-          <td>0.04</td>
+          <td>0.392386</td>
+          <td>0.02</td>
         </tr>
         <tr>
           <th>20</th>
-          <td>x1</td>
+          <td>x4</td>
           <td>x0</td>
-          <td>0.569613</td>
-          <td>0.02</td>
+          <td>0.081970</td>
+          <td>0.01</td>
         </tr>
         <tr>
           <th>21</th>
           <td>x1</td>
-          <td>x2</td>
-          <td>0.596419</td>
-          <td>0.01</td>
-        </tr>
-        <tr>
-          <th>22</th>
-          <td>x4</td>
           <td>x0</td>
-          <td>0.081970</td>
+          <td>0.569613</td>
           <td>0.01</td>
         </tr>
       </tbody>
@@ -655,35 +648,35 @@ We can easily perform sorting operations with pandas.DataFrame.
           <td>x0</td>
           <td>x1</td>
           <td>0.947100</td>
-          <td>0.52</td>
+          <td>0.41</td>
         </tr>
         <tr>
-          <th>16</th>
+          <th>17</th>
           <td>x3</td>
           <td>x2</td>
           <td>0.790837</td>
-          <td>0.06</td>
+          <td>0.02</td>
         </tr>
         <tr>
           <th>8</th>
           <td>x5</td>
           <td>x1</td>
           <td>0.758576</td>
-          <td>0.38</td>
-        </tr>
-        <tr>
-          <th>5</th>
-          <td>x2</td>
-          <td>x1</td>
-          <td>0.708409</td>
-          <td>0.51</td>
+          <td>0.32</td>
         </tr>
         <tr>
           <th>4</th>
+          <td>x2</td>
+          <td>x1</td>
+          <td>0.708409</td>
+          <td>0.41</td>
+        </tr>
+        <tr>
+          <th>5</th>
           <td>x3</td>
           <td>x1</td>
           <td>0.653876</td>
-          <td>0.52</td>
+          <td>0.41</td>
         </tr>
       </tbody>
     </table>
@@ -749,39 +742,39 @@ We can easily perform sorting operations with pandas.DataFrame.
       </thead>
       <tbody>
         <tr>
-          <th>22</th>
+          <th>21</th>
+          <td>x1</td>
+          <td>x0</td>
+          <td>0.569613</td>
+          <td>0.01</td>
+        </tr>
+        <tr>
+          <th>20</th>
           <td>x4</td>
           <td>x0</td>
           <td>0.081970</td>
           <td>0.01</td>
         </tr>
         <tr>
-          <th>21</th>
-          <td>x1</td>
-          <td>x2</td>
-          <td>0.596419</td>
-          <td>0.01</td>
-        </tr>
-        <tr>
-          <th>20</th>
-          <td>x1</td>
-          <td>x0</td>
-          <td>0.569613</td>
-          <td>0.02</td>
-        </tr>
-        <tr>
           <th>19</th>
           <td>x5</td>
           <td>x2</td>
-          <td>0.393533</td>
-          <td>0.04</td>
+          <td>0.392386</td>
+          <td>0.02</td>
         </tr>
         <tr>
           <th>18</th>
           <td>x0</td>
           <td>x2</td>
           <td>0.421582</td>
-          <td>0.04</td>
+          <td>0.02</td>
+        </tr>
+        <tr>
+          <th>17</th>
+          <td>x3</td>
+          <td>x2</td>
+          <td>0.790837</td>
+          <td>0.02</td>
         </tr>
       </tbody>
     </table>
@@ -854,35 +847,35 @@ following code extracts the causal direction towards x1.
           <td>x0</td>
           <td>x1</td>
           <td>0.947100</td>
-          <td>0.52</td>
+          <td>0.41</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>x3</td>
-          <td>x1</td>
-          <td>0.653876</td>
-          <td>0.52</td>
-        </tr>
-        <tr>
-          <th>5</th>
           <td>x2</td>
           <td>x1</td>
           <td>0.708409</td>
-          <td>0.51</td>
+          <td>0.41</td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td>x3</td>
+          <td>x1</td>
+          <td>0.653876</td>
+          <td>0.41</td>
         </tr>
         <tr>
           <th>8</th>
           <td>x5</td>
           <td>x1</td>
           <td>0.758576</td>
-          <td>0.38</td>
+          <td>0.32</td>
         </tr>
         <tr>
-          <th>12</th>
+          <th>9</th>
           <td>x4</td>
           <td>x1</td>
-          <td>0.044771</td>
-          <td>0.30</td>
+          <td>-0.326408</td>
+          <td>0.27</td>
         </tr>
       </tbody>
     </table>
@@ -910,7 +903,7 @@ values of the causal effect, as shown below.
 
 .. parsed-literal::
 
-    (array([82.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0., 18.]),
+    (array([88.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0., 12.]),
      array([0.   , 0.051, 0.102, 0.153, 0.204, 0.256, 0.307, 0.358, 0.409,
             0.46 , 0.511]),
      <a list of 10 Patch objects>)
